@@ -1,0 +1,14 @@
+name: cuban_cards
+description: >-
+  Identifica tarjetas bancarias cubanas: banco, moneda y producto detrás de un
+  número, y si es válido. Datos del catálogo comunitario de QvaPay,
+  vendorizados con la versión fijada.
+version: 0.1.0
+repository: https://github.com/hivepen/cuban-cards
+homepage: https://github.com/hivepen/cuban-cards
+
+environment:
+  sdk: ^3.0.0
+
+dev_dependencies:
+  test: ^1.24.0
