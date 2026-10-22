@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cuban-cards"
+version = "0.1.0"
+description = "Identifica tarjetas bancarias cubanas: banco, moneda y producto detrás de un número, y si es válido."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Hivepen" }]
+keywords = ["cuba", "banking", "cards", "luhn", "validation"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries",
+]
+
+[project.urls]
+Homepage = "https://github.com/hivepen/cuban-cards"
+Repository = "https://github.com/hivepen/cuban-cards"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"cuban_cards.data" = ["*.json"]
