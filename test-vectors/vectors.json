@@ -1,0 +1,419 @@
+{
+  "catalog_version": "0.5.1",
+  "about": "Vectores de conformidad compartidos por todos los puertos de cuban-cards. 'valid' da el resultado esperado de isValid para cada kind; 'describe' el objeto esperado (null si no es tarjeta cubana válida); 'bank_of' el resultado de bankOf.",
+  "vectors": [
+    {
+      "input": "9205069900000000",
+      "valid": {
+        "any": true,
+        "red": true,
+        "cup": true,
+        "usd": false,
+        "usd_mlc": false,
+        "clasica": false,
+        "clasica_empresarial": false,
+        "ais_cup": false,
+        "ais_usd": false
+      },
+      "describe": {
+        "prefix": "9205",
+        "currency": "CUP",
+        "mlc_backed": false,
+        "product": "Ahorro",
+        "bank": "BANDEC"
+      },
+      "bank_of": "BANDEC",
+      "note": "Ejemplo del README de QvaPay: ahorro CUP BANDEC"
+    },
+    {
+      "input": "9205 0699 0000 0000",
+      "valid": {
+        "any": true,
+        "red": true,
+        "cup": true,
+        "usd": false,
+        "usd_mlc": false,
+        "clasica": false,
+        "clasica_empresarial": false,
+        "ais_cup": false,
+        "ais_usd": false
+      },
+      "describe": {
+        "prefix": "9205",
+        "currency": "CUP",
+        "mlc_backed": false,
+        "product": "Ahorro",
+        "bank": "BANDEC"
+      },
+      "bank_of": "BANDEC",
+      "note": "El mismo número con espacios (normalización)"
+    },
+    {
+      "input": "9227959800000007",
+      "valid": {
+        "any": true,
+        "red": true,
+        "cup": true,
+        "usd": false,
+        "usd_mlc": false,
+        "clasica": false,
+        "clasica_empresarial": false,
+        "ais_cup": false,
+        "ais_usd": false
+      },
+      "describe": {
+        "prefix": "9227",
+        "currency": "CUP",
+        "mlc_backed": false,
+        "product": "Nómina, fondos, ahorro",
+        "bank": "METROPOLITANO"
+      },
+      "bank_of": "METROPOLITANO",
+      "note": "Caso real: nómina/ahorro CUP BANMET"
+    },
+    {
+      "input": "9205959800000003",
+      "valid": {
+        "any": true,
+        "red": true,
+        "cup": true,
+        "usd": false,
+        "usd_mlc": false,
+        "clasica": false,
+        "clasica_empresarial": false,
+        "ais_cup": false,
+        "ais_usd": false
+      },
+      "describe": {
+        "prefix": "9205",
+        "currency": "CUP",
+        "mlc_backed": false,
+        "product": "Ahorro",
+        "bank": "METROPOLITANO"
+      },
+      "bank_of": "METROPOLITANO",
+      "note": "Caso real: ahorro CUP BANMET"
+    },
+    {
+      "input": "9205129900000002",
+      "valid": {
+        "any": true,
+        "red": true,
+        "cup": true,
+        "usd": false,
+        "usd_mlc": false,
+        "clasica": false,
+        "clasica_empresarial": false,
+        "ais_cup": false,
+        "ais_usd": false
+      },
+      "describe": {
+        "prefix": "9205",
+        "currency": "CUP",
+        "mlc_backed": false,
+        "product": "Ahorro",
+        "bank": "BPA"
+      },
+      "bank_of": "BPA",
+      "note": "Caso real: ahorro CUP BPA"
+    },
+    {
+      "input": "9205-1299-0000-0002",
+      "valid": {
+        "any": true,
+        "red": true,
+        "cup": true,
+        "usd": false,
+        "usd_mlc": false,
+        "clasica": false,
+        "clasica_empresarial": false,
+        "ais_cup": false,
+        "ais_usd": false
+      },
+      "describe": {
+        "prefix": "9205",
+        "currency": "CUP",
+        "mlc_backed": false,
+        "product": "Ahorro",
+        "bank": "BPA"
+      },
+      "bank_of": "BPA",
+      "note": "El mismo caso BPA con guiones (normalización)"
+    },
+    {
+      "input": "9225129900000008",
+      "valid": {
+        "any": true,
+        "red": true,
+        "cup": false,
+        "usd": true,
+        "usd_mlc": true,
+        "clasica": false,
+        "clasica_empresarial": false,
+        "ais_cup": false,
+        "ais_usd": false
+      },
+      "describe": {
+        "prefix": "9225",
+        "currency": "USD",
+        "mlc_backed": true,
+        "product": "Ahorro de personas naturales",
+        "bank": "BPA"
+      },
+      "bank_of": "BPA",
+      "note": "Caso real: USD con respaldo MLC BPA (el banco sale de los dígitos 5-8)"
+    },
+    {
+      "input": "9206069900000009",
+      "valid": {
+        "any": true,
+        "red": true,
+        "cup": true,
+        "usd": false,
+        "usd_mlc": false,
+        "clasica": false,
+        "clasica_empresarial": false,
+        "ais_cup": false,
+        "ais_usd": false
+      },
+      "describe": {
+        "prefix": "9206",
+        "currency": "CUP",
+        "mlc_backed": false,
+        "product": "Jubilación",
+        "bank": "BANDEC"
+      },
+      "bank_of": "BANDEC",
+      "note": "Caso real: jubilación CUP BANDEC"
+    },
+    {
+      "input": "9760030000000008",
+      "valid": {
+        "any": true,
+        "red": false,
+        "cup": false,
+        "usd": true,
+        "usd_mlc": false,
+        "clasica": true,
+        "clasica_empresarial": false,
+        "ais_cup": false,
+        "ais_usd": false
+      },
+      "describe": {
+        "prefix": "9760",
+        "currency": "USD",
+        "mlc_backed": false,
+        "product": "Clásica",
+        "bank": "FINCIMEX"
+      },
+      "bank_of": null,
+      "note": "Clásica: sin estructura RED; banco por emisor del prefijo"
+    },
+    {
+      "input": "9760040000000007",
+      "valid": {
+        "any": true,
+        "red": false,
+        "cup": false,
+        "usd": true,
+        "usd_mlc": false,
+        "clasica": true,
+        "clasica_empresarial": true,
+        "ais_cup": false,
+        "ais_usd": false
+      },
+      "describe": {
+        "prefix": "9760",
+        "currency": "USD",
+        "mlc_backed": false,
+        "product": "Clásica Empresarial",
+        "bank": "FINCIMEX"
+      },
+      "bank_of": null,
+      "note": "Clásica Empresarial: la variante de 6 dígitos pisa el producto"
+    },
+    {
+      "input": "9550123400000001",
+      "valid": {
+        "any": true,
+        "red": false,
+        "cup": true,
+        "usd": false,
+        "usd_mlc": false,
+        "clasica": false,
+        "clasica_empresarial": false,
+        "ais_cup": true,
+        "ais_usd": false
+      },
+      "describe": {
+        "prefix": "9550",
+        "currency": "CUP",
+        "mlc_backed": false,
+        "product": "AIS CUP",
+        "bank": "AIS"
+      },
+      "bank_of": null,
+      "note": "AIS en CUP (ex-CUC)"
+    },
+    {
+      "input": "9560123400000009",
+      "valid": {
+        "any": true,
+        "red": false,
+        "cup": false,
+        "usd": true,
+        "usd_mlc": false,
+        "clasica": false,
+        "clasica_empresarial": false,
+        "ais_cup": false,
+        "ais_usd": true
+      },
+      "describe": {
+        "prefix": "9560",
+        "currency": "USD",
+        "mlc_backed": null,
+        "product": "AIS USD",
+        "bank": "AIS"
+      },
+      "bank_of": null,
+      "note": "AIS en USD"
+    },
+    {
+      "input": "9240069900000007",
+      "valid": {
+        "any": true,
+        "red": true,
+        "cup": false,
+        "usd": true,
+        "usd_mlc": false,
+        "clasica": false,
+        "clasica_empresarial": false,
+        "ais_cup": false,
+        "ais_usd": false
+      },
+      "describe": {
+        "prefix": "9240",
+        "currency": "USD",
+        "mlc_backed": false,
+        "product": "Prepago en USD",
+        "bank": "BANDEC"
+      },
+      "bank_of": "BANDEC",
+      "note": "Tropical: prepago USD sin respaldo MLC"
+    },
+    {
+      "input": "9225069900000006",
+      "valid": {
+        "any": true,
+        "red": true,
+        "cup": false,
+        "usd": true,
+        "usd_mlc": true,
+        "clasica": false,
+        "clasica_empresarial": false,
+        "ais_cup": false,
+        "ais_usd": false
+      },
+      "describe": {
+        "prefix": "9225",
+        "currency": "USD",
+        "mlc_backed": true,
+        "product": "Ahorro de personas naturales",
+        "bank": "BANDEC"
+      },
+      "bank_of": "BANDEC",
+      "note": "USD con respaldo MLC BANDEC"
+    },
+    {
+      "input": "9200069900000005",
+      "valid": {
+        "any": true,
+        "red": true,
+        "cup": true,
+        "usd": false,
+        "usd_mlc": false,
+        "clasica": false,
+        "clasica_empresarial": false,
+        "ais_cup": false,
+        "ais_usd": false
+      },
+      "describe": {
+        "prefix": "9200",
+        "currency": "CUP",
+        "mlc_backed": false,
+        "product": null,
+        "bank": "BANDEC"
+      },
+      "bank_of": "BANDEC",
+      "note": "Prefijo 9200: producto aún sin identificar en el catálogo"
+    },
+    {
+      "input": "9205069900000001",
+      "valid": {
+        "any": false,
+        "red": false,
+        "cup": false,
+        "usd": false,
+        "usd_mlc": false,
+        "clasica": false,
+        "clasica_empresarial": false,
+        "ais_cup": false,
+        "ais_usd": false
+      },
+      "describe": null,
+      "bank_of": null,
+      "note": "Dígito de control incorrecto (Luhn)"
+    },
+    {
+      "input": "4111111111111111",
+      "valid": {
+        "any": false,
+        "red": false,
+        "cup": false,
+        "usd": false,
+        "usd_mlc": false,
+        "clasica": false,
+        "clasica_empresarial": false,
+        "ais_cup": false,
+        "ais_usd": false
+      },
+      "describe": null,
+      "bank_of": null,
+      "note": "Tarjeta internacional válida en Luhn pero no cubana"
+    },
+    {
+      "input": "9205",
+      "valid": {
+        "any": false,
+        "red": false,
+        "cup": false,
+        "usd": false,
+        "usd_mlc": false,
+        "clasica": false,
+        "clasica_empresarial": false,
+        "ais_cup": false,
+        "ais_usd": false
+      },
+      "describe": null,
+      "bank_of": null,
+      "note": "Número incompleto"
+    },
+    {
+      "input": "",
+      "valid": {
+        "any": false,
+        "red": false,
+        "cup": false,
+        "usd": false,
+        "usd_mlc": false,
+        "clasica": false,
+        "clasica_empresarial": false,
+        "ais_cup": false,
+        "ais_usd": false
+      },
+      "describe": null,
+      "bank_of": null,
+      "note": "Cadena vacía"
+    }
+  ]
+}
