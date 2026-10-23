@@ -65,7 +65,7 @@ cuban_cards.describe("9227 9598 0000 0007")
 ## Actualizar los datos
 
 ```bash
-python3 scripts/sync_data.py --version v0.5.1
+python3 scripts/sync_data.py --version v0.5.2
 ```
 
 Descarga `prefixes.json` y `validators.json` de esa versión del upstream,
