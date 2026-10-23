@@ -21,7 +21,7 @@ El catálogo **no** se mantiene aquí. Vive en el proyecto comunitario
 La Clásica (`9760`, FINCIMEX) y las AIS (`9550`/`9560`) no siguen la
 estructura RED. La variante de 6 dígitos `976004` es la Clásica Empresarial.
 
-Aquí los datos se **vendorizan fijando versión** (`data/`, hoy v0.5.1) para
+Aquí los datos se **vendorizan fijando versión** (`data/`, hoy v0.5.2) para
 que ninguna app dependa de la red en tiempo de ejecución. El script
 `scripts/sync_data.py` actualiza la copia desde una versión concreta del
 upstream y regenera lo que cada lenguaje necesite.
