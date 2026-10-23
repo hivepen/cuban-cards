@@ -4,12 +4,12 @@
 catálogo comunitario **[qvapay/cuban_cards_prefixes](https://github.com/qvapay/cuban_cards_prefixes)**,
 mantenido por QvaPay y la comunidad.
 
-- **Versión fijada:** v0.5.1 (`"version": "0.5.1"` dentro de ambos ficheros)
+- **Versión fijada:** v0.5.2 (`"version": "0.5.2"` dentro de ambos ficheros)
 - **Licencia:** MIT (la del upstream; este repo es también MIT)
 - **Origen:**
   - https://raw.githubusercontent.com/qvapay/cuban_cards_prefixes/main/prefixes.json
   - https://raw.githubusercontent.com/qvapay/cuban_cards_prefixes/main/validators.json
-- **Copia tomada:** 2026-10-21
+- **Copia tomada:** 2026-10-23
 
 Para actualizar a otra versión del upstream (y regenerar las copias que
 viven dentro de cada paquete), usa desde la raíz del repo:
