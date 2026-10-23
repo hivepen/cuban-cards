@@ -1,5 +1,5 @@
 {
-  "catalog_version": "0.5.1",
+  "catalog_version": "0.5.2",
   "about": "Vectores de conformidad compartidos por todos los puertos de cuban-cards. 'valid' da el resultado esperado de isValid para cada kind; 'describe' el objeto esperado (null si no es tarjeta cubana válida); 'bank_of' el resultado de bankOf.",
   "vectors": [
     {
