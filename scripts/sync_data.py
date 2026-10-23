@@ -2,7 +2,7 @@
 """Sincroniza el catálogo desde qvapay/cuban_cards_prefixes fijando versión.
 
 Uso:
-    python3 scripts/sync_data.py --version v0.5.1
+    python3 scripts/sync_data.py --version v0.5.2
 
 Descarga prefixes.json y validators.json de ese tag del upstream, los deja
 en data/, copia ambos a python/src/cuban_cards/data/, regenera
@@ -31,7 +31,7 @@ def fetch(tag: str, name: str) -> str:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--version", required=True, help="Tag del upstream, p. ej. v0.5.1")
+    ap.add_argument("--version", required=True, help="Tag del upstream, p. ej. v0.5.2")
     args = ap.parse_args()
 
     prefixes = fetch(args.version, "prefixes.json")
